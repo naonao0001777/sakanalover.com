@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Profile</title>
+  <style>
+    body {
+      background: #f0f0f0;
+      font-family: sans-serif;
+      margin: 0;
+      padding-top: 32px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center; /* 追加：中央配置 */
+      min-height: 100vh;
+    }
+    .profile {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .profile-label {
+      font-size: 1.7rem; /* さらに大きく */
+      font-weight: bold;
+      margin-bottom: 8px;
+      display: block;
+    }
+    .profile-value {
+      font-size: 1.3rem; /* さらに大きく */
+      margin-bottom: 28px;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="profile">
+    <span class="profile-label">Name</span>
+    <span class="profile-value">Naohiro Abiko</span>
+    <span class="profile-label">Location</span>
+    <span class="profile-value">Tokyo</span>
+    <span class="profile-label">Job</span>
+    <span class="profile-value">Software Engineer</span>
+  </div>
+</body>
+</html>
