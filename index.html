@@ -12,6 +12,8 @@
       justify-content: center;
       align-items: center;
       background: #f0f0f0;
+      min-width: 360px;
+      overflow-x: auto; /* 横スクロール許可 */
     }
     .circle-icon {
       width: 150px;
@@ -40,24 +42,34 @@
       text-decoration: none;
       color: #333;
       font-size: 1.5rem;
-      font-family: sans-serif;
+      font-family: inherit;
       width: 100%;
       text-align: left;
     }
     .links a:hover {
       text-decoration: underline;
     }
+    .center-block {
+      width: 360px;
+      min-width: 360px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   </style>
 </head>
 <body>
-  <div class="circle-icon">
-    <img src="images/icon.png" alt="アイコン">
-  </div>
-  <div class="links">
-    <a href="profile.html">Profile</a>
-    <a href="https://sakanalover.blogspot.com/" target="_blank" rel="noopener noreferrer">Blog</a>
-    <a href="https://github.com/naonao0001777" target="_blank" rel="noopener noreferrer">GitHub</a>
-    <a href="https://www.wantedly.com/id/nao_data" target="_blank" rel="noopener noreferrer">Wantedly</a>
+  <div class="center-block">
+    <div class="circle-icon">
+      <img src="images/icon.png" alt="アイコン">
+    </div>
+    <div class="links">
+      <a href="profile.html">Profile</a>
+      <a href="https://sakanalover.blogspot.com/" target="_blank" rel="noopener noreferrer">Blog</a>
+      <a href="https://github.com/naonao0001777" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.wantedly.com/id/nao_data" target="_blank" rel="noopener noreferrer">Wantedly</a>
+    </div>
   </div>
 </body>
 </html>
