@@ -2,6 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Profile</title>
   <style>
     body {
@@ -47,6 +48,23 @@
       font-size: 1.3rem; /* さらに大きく */
       margin-bottom: 28px;
       display: block;
+    }
+    
+    /* スマホ対応：要素サイズを維持 */
+    @media (max-width: 480px) {
+      .profile {
+        padding: 0 20px;
+        width: 100%;
+      }
+      .profile-label {
+        font-size: 1.7rem; /* サイズ維持 */
+      }
+      .profile-value {
+        font-size: 1.3rem; /* サイズ維持 */
+      }
+      .back-btn {
+        font-size: 1rem; /* サイズ維持 */
+      }
     }
   </style>
 </head>

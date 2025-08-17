@@ -2,6 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>index</title>
   <style>
     body {
@@ -12,7 +13,7 @@
       justify-content: center;
       align-items: center;
       background: #f0f0f0;
-      min-width: 360px;
+      font-family: sans-serif;
       overflow-x: auto; /* 横スクロール許可 */
     }
     .circle-icon {
@@ -49,13 +50,34 @@
     .links a:hover {
       text-decoration: underline;
     }
+    .links a[target="_blank"]:after {
+      content: " ↗";
+      font-size: 0.8em;
+      opacity: 0.7;
+    }
     .center-block {
-      width: 360px;
-      min-width: 360px;
+      width: 100%;
+      max-width: 360px;
       margin: 0 auto;
+      padding: 0 20px;
+      box-sizing: border-box;
       display: flex;
       flex-direction: column;
       align-items: center;
+    }
+    
+    /* スマホ対応：要素サイズを維持 */
+    @media (max-width: 480px) {
+      .center-block {
+        padding: 0 20px;
+      }
+      .circle-icon {
+        width: 150px; /* サイズ維持 */
+        height: 150px;
+      }
+      .links a {
+        font-size: 1.5rem; /* サイズ維持 */
+      }
     }
   </style>
 </head>
